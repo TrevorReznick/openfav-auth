@@ -1,0 +1,48 @@
+---
+
+type Classname = string
+
+interface Props {
+    variant?: 'primary' | 'secondary'
+    size?: 'small' | 'medium' | 'large'
+    onClick?: string
+    class?: Classname
+    ariaLabel?: string
+}
+
+const {
+    variant = 'primary',
+    size = 'medium',
+    onClick,
+    ariaLabel
+} = Astro.props
+
+// Stili di base comuni a tutti i bottoni
+const baseStyles = "rounded-xl font-bold text-primaryText border border-solid flex justify-center items-center cursor-pointer transition"
+
+// Stili specifici per ogni variante
+const variantStyles = {
+    primary: "bg-primaryColor hover:bg-secondaryColor border-primaryColor",
+    secondary: "bg-bgDark2 hover:bg-bgDark3 border-primaryColor"
+}
+
+// Stili specifici per ogni dimensione
+const sizeStyles = {
+    small: "w-32 h-8 text-sm",
+    medium: "w-64 sm:w-52 h-12",
+    large: "w-72 sm:w-64 h-14 text-lg"
+}
+
+// Combina tutti gli stili
+//const buttonClass = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`
+const buttonClass = "w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-primaryColor hover:bg-secondaryColor border-primaryColor transition"
+---
+
+<button
+    class={buttonClass}
+    onclick={onClick}
+    aria-label={ariaLabel}
+>
+    <slot name="myButton" />
+</button>
+

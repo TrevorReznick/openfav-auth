@@ -1,0 +1,29 @@
+---
+import Button from './Button.astro'
+---
+
+<div class="space-y-4">
+    <!-- Bottone primary standard -->
+    <Button variant="primary" onClick="window.handleClick()">
+        Click Me
+    </Button>
+
+    <!-- Bottone secondary piccolo -->
+    <Button 
+        variant="secondary" 
+        size="small" 
+        ariaLabel="Learn more about our features"
+    >
+        Learn More
+    </Button>
+
+    <!-- Bottone grande con classe personalizzata -->
+    <Button 
+        variant="primary" 
+        size="large" 
+        class="shadow-lg"
+        onClick="window.openModal()"
+    >
+        Open Modal
+    </Button>
+</div>
