@@ -5,5 +5,18 @@ import MyForm from "../components/test/FormSignin.astro";
 
 <Layout title="Login" />
 <Fragment>
-  <MyForm />
+  <MyForm 
+    inputs={[
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        label: 'Password',
+      },
+    ]}
+  />
 </Fragment>
