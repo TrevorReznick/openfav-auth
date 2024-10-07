@@ -6,7 +6,7 @@ import MyForm from "../components/sub-pages/FormSignin.astro";
 <Layout title="Login" />
 <Fragment>
   <MyForm 
-    inputs={[
+    inputs = {[
       {
         type: 'email',
         name: 'email',
@@ -18,6 +18,13 @@ import MyForm from "../components/sub-pages/FormSignin.astro";
         label: 'Password',
       },
     ]}
+    button = {[
+      {
+        type: 'button', // o 'button' a seconda del tuo caso
+        class: 'w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none',
+        label: 'Sign in'
+      }
+    ]}    
     disclaimer={{
       label:
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
