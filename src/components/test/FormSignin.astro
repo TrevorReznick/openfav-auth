@@ -1,5 +1,14 @@
 ---
 import FormComponent from "./FormComponent.astro"
+
+const {
+  inputs,
+  disclaimer,
+  button,
+  description,
+  id,
+  classes = {}
+} = Astro.props;
 ---
 
 --- ---
@@ -12,7 +21,7 @@ import FormComponent from "./FormComponent.astro"
         <p class="text-secondaryText">Sign in to access your account</p>
       </div>
       <div class="m-7">
-        <FormComponent />
+        <FormComponent inputs={inputs} disclaimer={disclaimer} button={button} description={description} />
       </div>
     </div>
   </div>
