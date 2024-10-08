@@ -3,22 +3,21 @@ import { twMerge } from "tailwind-merge";
 import myButton from "../base/test-buttons/Button.astro";
 
 const {
+  email,
+  user_name,
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
   content = await Astro.slots.render("content"),
   tagline = await Astro.props.tagline("tagline"),
   classes = {},
-} = Astro.props;
+} = Astro.props
 
 const {
-  container:
-    containerClass = "w-screen flex justify-center items-center bg-bgDark1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0",
-  title:
-    titleClass = 'text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-primaryText px-8 sm:px-8 md:px-20 lg:px-4"',
-  subtitle:
-    subtitleClass = "text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48",
+  container: containerClass = "w-screen flex justify-center items-center bg-bgDark1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0",
+  title: titleClass = 'text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-primaryText px-8 sm:px-8 md:px-20 lg:px-4"',
+  subtitle: subtitleClass = "text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48",
   content: contentClass = "mb-10 text-secondaryText leading-loose",
-} = classes;
+} = classes
 ---
 
 <section class={twMerge("flex flex-col items-center", containerClass)}>
@@ -42,7 +41,7 @@ const {
   }
   {
     subtitle && (
-      <h2 class={twMerge("mt-2", subtitleClass)} set:html={subtitle} />
+      <h2 class={twMerge("mt-2", subtitleClass)} set:html={`welcome ${user_name}`} />
     )
   }
   <div
