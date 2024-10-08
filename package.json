@@ -1,9 +1,9 @@
 {
-  "name": "openfav-tailcast",
+  "name": "openfav",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
-  "description": "Dark themed website template built on AstroJS, designed for fictional startup",
+  "description": "Openfav develop project",
   "author": {
     "name": "Trevor Reznick",
     "email": "electrics.sheeps@gmail.com",
