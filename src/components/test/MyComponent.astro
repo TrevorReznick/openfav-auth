@@ -2,8 +2,7 @@
 import { twMerge } from "tailwind-merge";
 import myButton from "../base/test-buttons/Button.astro";
 
-const {
-  email,
+const {  
   user_name,
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
