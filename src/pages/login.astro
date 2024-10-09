@@ -21,17 +21,5 @@ import MyForm from '../components/sub-pages/FormSignin.astro'
     action = '/api/v1/auth/signin'
     title = 'Log in'
     text = 'Sign in to access your account'
-    button = {[
-      {
-        type: 'button', // o 'button' a seconda del tuo caso
-        class: 'w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none',
-        label: 'Sign in'
-      }
-    ]}    
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
   />
 </Fragment>
