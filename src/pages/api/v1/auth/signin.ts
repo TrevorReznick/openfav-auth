@@ -17,6 +17,9 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
           : 'https://openfav.vercel.app/api/v1/auth/callback'
       },
     })
+    if (!import.meta.env.DEV) {
+      console.log("Stai in ambiente di sviluppo");
+    }
 
     if (error) {
       return new Response(error.message, { status: 500 })
