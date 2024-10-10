@@ -9,8 +9,7 @@ export default defineConfig({
   image: {
     service: passthroughImageService()
   },
-  integrations: [
-    react(), 
+  integrations: [     
     tailwind()
   ]
 })
