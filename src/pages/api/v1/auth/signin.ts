@@ -14,12 +14,13 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
       options: {
         redirectTo: 
           import.meta.env.DEV
-          ? 'http://localhost:4321/api/v1/auth/callback/'          
-          : 'https://openfav.vercel.app/api/v1/auth/callback'
+          ? import.meta.env.PUBLIC_DEV_API_URL + 'callback'          
+          : import.meta.env.PUBLIC_PROD_API_URL + 'callback'
       },
     })
     if (!import.meta.env.DEV) {
       console.log("Stai in ambiente di produzione");
+      console.log(import.meta.env.PUBLIC_PROD_API_URL + 'callback')
     }
 
     if (error) {
