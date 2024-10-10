@@ -3,13 +3,11 @@ import FormComponent from "../base/Form.astro"
 
 const {
   inputs,
-  title,
   action,
-  button,  
-  text,
-  id,
+  title,
+  text,  
   classes = {}
-} = Astro.props
+} = Astro.props;
 ---
 
 --- ---
@@ -18,11 +16,11 @@ const {
   <div class="mx-auto container">
     <div class="max-w-md mx-auto my-10">
       <div class="text-center">
-        <h1 class="my-3 text-3xl font-semibold text-primaryText">{title}</h1>
-        <p class="text-secondaryText">{text}</p>
+        <h1 class="my-3 text-3xl font-semibold text-primaryText">Sign in</h1>
+        <p class="text-secondaryText">Sign in to access your account</p>
       </div>
       <div class="m-7">
-        <FormComponent inputs={inputs} action={action}  button={button}  />
+        <FormComponent inputs={inputs} />
       </div>
     </div>
   </div>
