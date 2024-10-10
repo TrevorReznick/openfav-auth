@@ -9,6 +9,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const provider = formData.get('provider')?.toString()
 
   if (provider) {
+    console.log('env: ', import.meta.env.DEV)
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: provider as Provider,
       options: {
