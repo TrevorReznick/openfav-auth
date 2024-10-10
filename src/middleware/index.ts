@@ -3,7 +3,7 @@ import { supabase } from '~/providers/supabase'
 import { id, email, user_name } from '../store'
 
 const protectedRoutes = ['/test/test-reusable']
-const redirectRoutes = ['/login/signin', '/login/register']
+const redirectRoutes = ['/login', '/register']
 
 export const onRequest = defineMiddleware(
   async ({ locals, url, cookies, redirect }, next) => {
@@ -27,7 +27,7 @@ export const onRequest = defineMiddleware(
         cookies.delete('sb-refresh-token', {
           path: '/',
         })
-        return redirect('/login/signin')
+        return redirect('/login')
       }
       console.log('auth data', data)
 
