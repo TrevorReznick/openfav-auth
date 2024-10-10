@@ -12,9 +12,12 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: provider as Provider,
       options: {
-        redirectTo: import.meta.env.DEV
+        redirectTo: 'https://openfav.vercel.app/api/v1/auth/callback'
+          /*
+          import.meta.env.DEV
           ? 'http://localhost:4321/api/v1/auth/callback'          
           : 'https://openfav.vercel.app/api/v1/auth/callback'
+          */
       },
     })
     if (!import.meta.env.DEV) {
