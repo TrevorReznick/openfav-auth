@@ -20,7 +20,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     })
     if (!import.meta.env.DEV) {
       console.log("Stai in ambiente di produzione");
-      console.log(import.meta.env.PUBLIC_PROD_API_URL + 'callback')
+      console.log(import.meta.env.PUBLIC_PROD_API_URL + '/auth/callback')
     }
 
     if (error) {
