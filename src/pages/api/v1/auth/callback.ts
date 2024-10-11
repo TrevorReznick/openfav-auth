@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro'
 import { supabase } from '../../../../providers/supabase'
+/*****/
 
 export const GET: APIRoute = async ({ url, cookies, redirect }) => {
   console.log("Callback ricevuta, elaborazione in corso...");
