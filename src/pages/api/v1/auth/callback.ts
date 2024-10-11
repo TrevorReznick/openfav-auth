@@ -20,5 +20,5 @@ export const GET: APIRoute = async ({ url, cookies, redirect }) => {
   // ... (il resto del tuo codice per impostare i cookie)
 
   console.log("Cookie impostati, reindirizzamento alla dashboard...");
-  return redirect('/dashboard')
+  return redirect('/test/test-reusable')
 };
