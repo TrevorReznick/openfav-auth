@@ -12,7 +12,7 @@ export const onRequest = defineMiddleware(
       const refreshToken = cookies.get('sb-refresh-token')
 
       if (!accessToken || !refreshToken) {
-        return redirect('/login/signin')
+        return redirect('/login')
       }
 
       const { data, error } = await supabase.auth.setSession({
