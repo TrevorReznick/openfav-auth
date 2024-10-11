@@ -14,13 +14,13 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
       options: {
         redirectTo: 
           import.meta.env.PROD
-          ? import.meta.env.PUBLIC_PROD_API_URL + '/auth/callback'
-          : import.meta.env.PUBLIC_DEV_API_URL + '/auth/callback'
+          ? import.meta.env.PUBLIC_PROD_API_URL + 'auth/callback'
+          : import.meta.env.PUBLIC_DEV_API_URL + 'auth/callback'
       },
     })
     if (!import.meta.env.DEV) {
       console.log("Stai in ambiente di produzione");
-      console.log(import.meta.env.PUBLIC_PROD_API_URL + '/auth/callback')
+      console.log(import.meta.env.PUBLIC_PROD_API_URL + 'auth/callback')
     }
 
     if (error) {
