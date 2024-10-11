@@ -45,12 +45,11 @@ const navbarLinks = [
       <div class="grow basis-0 justify-end hidden lg:flex">
         <a
           class="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-          href="https://github.com/matt765/Tidestream"
-          target="_blank"
+          href="/api/v1/auth/signout"          
           aria-label="source code"
         >
           <GithubIcon />
-          <span class="pt-px">Source code</span>
+          <span class="pt-px">Sign in</span>
         </a>
       </div>
     </div>
@@ -79,11 +78,11 @@ const navbarLinks = [
     ))}
     <a
       class="outlined-button pl-6 pr-8 pt-2 pb-2 flex"
-      href="https://github.com/matt765/Tidestream"
+      href="/api/v1/auth/logout"
       target="_blank"
     >
       <GithubIcon />
-      Source code
+      Sign in
     </a>
   </div>
 </nav>
