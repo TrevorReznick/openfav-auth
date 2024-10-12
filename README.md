@@ -16,7 +16,7 @@ Be carefull with the supabase project url, use localhost:4321 in dev mode, and s
 Install dependecies and run it, that's all
 
 ## Deploy:
-This web app is optimized to be deployed on vercel; but you can choose another service, payng attention to the set correct adapter in the astro.config.mjs
+This web app is optimized to be deployed on vercel; but you can choose another service, making attention to the set the correct adapter in the astro.config.mjs
 
 ## Live link
 [Openfav-auth](https://openfav-auth.vercel.app)
