@@ -11,7 +11,8 @@ Open an account (if you dont'have) on [Supabase](https://supabase.com/) and star
 Set up authentication:
 Navigate to the "Authentication" tab in your project dashboard. Enable desired auth providers: (e.g., email/password, Google, GitHub).
 We need stuff such as ClientID or OauthID that are provided from the social provider (ie. Google Developer console, Github settings etc)
-cp .env.example .env and insert the supabase url and supabase key
+cp .env.example .env and insert the supabase url and supabase key.
+Be carefull with the supabase project url, use localhost:4321 in dev mode, and set the prod url for production.
 Install dependecies and run it, that's all
 
 ## Deploy:
