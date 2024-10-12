@@ -4,7 +4,7 @@ This template is a fork of [tailcast](https://github.com/matt765/Tailcast); the 
 
 ## Tech stack:
 
-Astro, Supabase, TailwindCss
+Astro, Supabase, TailwindCss, Nanostores
 
 ## Configuration:
 Open an account (if you dont'have) on [Supabase](https://supabase.com/) and start a new project;
