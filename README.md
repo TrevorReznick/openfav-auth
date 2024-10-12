@@ -1,6 +1,6 @@
-# Tailcast
+# Openfav auth
 
-Dark themed website template built on AstroJS, designed for fictional startup
+This template is a fork of [https://github.com/matt765/Tailcast]
 
 ## Tech stack:
 
@@ -12,18 +12,28 @@ Astro, React, Tailwind, Framer Motion
 ##  Project Structure
 
 ```
-├── public/
+├── .env.example
+├── astro.config.mjs
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── license
+├── package.json
+├── public
 │   └── favicon.svg
-├── src/
+├── README.md
+├── src
 │   ├── assets
-│   │   ├── icons
-│   │   ├── images
-│   │   └── logos
 │   ├── components
+│   ├── env.d.ts
 │   ├── layouts
+│   ├── middleware
 │   ├── pages
-│   └── styles
-└── package.json
+│   ├── providers
+│   ├── store
+│   └── types
+├── tailwind.config.cjs
+├── tsconfig.json
+└── vercel.json
 ```
 
 ##  How to run
