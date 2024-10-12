@@ -18,6 +18,14 @@ Install dependecies and run it, that's all
 ## Deploy:
 This web app is optimized to be deployed on vercel; but you can choose another service, making attention to the set the correct adapter in the astro.config.mjs
 
+## Contributing:
+Feel free to contribute, Openfav-auth needs some changes to work perfectly
+
+## To Do:
+You let me know? Ah ah ah
+
+
+
 ## Live link
 [Openfav-auth](https://openfav-auth.vercel.app)
 
