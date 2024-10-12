@@ -1,5 +1,7 @@
 ---
 import  TailcastLogo  from '../../assets/logos/TailcastLogo.astro'
+import { Image } from 'astro:assets'
+import logo from '../../assets/logos/openfav.png'
 import GithubIcon from '../../assets/icons/GithubIcon.astro'
 import { isAuthenticated } from '../../store'
 
@@ -23,11 +25,16 @@ const _isAuthenticated = isAuthenticated.get()
     <div>
       <a href="/#home" aria-label="Home">
         <div class="flex justify-start items-center grow basis-0">
-          <div class="text-white mr-2 text-6xl">
-            <TailcastLogo />
-          </div>
           <div class="text-white font-['Inter'] font-bold text-xl">
-            Tailcast
+            Openfav
+          </div>
+          <div class="text-white ml-1 mb-7 text-6xl">
+            <Image
+                src={logo}
+                alt="logo"
+                width=30
+                height=30
+              />
           </div>
         </div>
       </a>

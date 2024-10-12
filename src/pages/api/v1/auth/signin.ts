@@ -55,7 +55,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
     secure: true,
   })
 
-  return redirect('/test/test-reusable')
+  return redirect('/protected/page')
 }
 
 export const GET: APIRoute = async ({ cookies }) => {
