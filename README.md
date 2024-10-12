@@ -1,13 +1,22 @@
 # Openfav auth
 
-This template is a fork of [tailcast](https://github.com/matt765/Tailcast)
+This template is a fork of [tailcast](https://github.com/matt765/Tailcast); the *.jsx where converted in astro files, for who prefers the astro syntax.
 
 ## Tech stack:
 
-Astro, React, Tailwind, Framer Motion
+Astro, Supabase, TailwindCss
+
+## Configuration:
+Open an account (if you dont'have) on (Supabase)[https://supabase.com/] and start a new project;
+Set up authentication:
+Navigate to the "Authentication" tab in your project dashboard.
+Enable desired auth providers:
+Supabase supports various auth methods. Enable the ones you need (e.g., email/password, Google, GitHub).
+Configure auth settings:
+Adjust settings like password strength, email templates, etc.
 
 ## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+[Openfav-auth](https://openfav-auth.vercel.app)
 
 ##  Project Structure
 
