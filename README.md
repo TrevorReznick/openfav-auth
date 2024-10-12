@@ -1,29 +1,59 @@
-# Tailcast
+# Openfav auth
 
-Dark themed website template built on AstroJS, designed for fictional startup
+This template is a fork of [tailcast](https://github.com/matt765/Tailcast); the *.jsx where converted in astro files, for who prefers the astro syntax.
 
 ## Tech stack:
 
-Astro, React, Tailwind, Framer Motion
+Astro, Supabase, TailwindCss, Nanostores
+
+## Configuration:
+Open an account (if you dont'have) on [Supabase](https://supabase.com/) and start a new project;
+Set up authentication:
+Navigate to the "Authentication" tab in your project dashboard. Enable desired auth providers: (e.g., email/password, Google, GitHub).
+We need stuff such as ClientID or OauthID that are provided from the social provider (ie. Google Developer console, Github settings etc)
+cp .env.example .env and insert the supabase url and supabase key.
+Be carefull with the supabase project url (i spent a day to understand why the flow failed), use localhost:4321 in dev mode, and set the prod url for production.
+Install dependecies and run it, that's all
+
+## Deploy:
+This web app is optimized to be deployed on vercel; but you can choose another service, making attention to the set the correct adapter in the astro.config.mjs
+
+## Contributing:
+Feel free to contribute, Openfav-auth needs some changes to work perfectly
+
+## To Do:
+You let me know? Ah ah ah
+
+
 
 ## Live link
-[https://tailcast.vercel.app/](https://tailcast.vercel.app/)
+[Openfav-auth](https://openfav-auth.vercel.app)
 
 ##  Project Structure
 
 ```
-├── public/
+├── .env.example
+├── astro.config.mjs
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── license
+├── package.json
+├── public
 │   └── favicon.svg
-├── src/
+├── README.md
+├── src
 │   ├── assets
-│   │   ├── icons
-│   │   ├── images
-│   │   └── logos
 │   ├── components
+│   ├── env.d.ts
 │   ├── layouts
+│   ├── middleware
 │   ├── pages
-│   └── styles
-└── package.json
+│   ├── providers
+│   ├── store
+│   └── types
+├── tailwind.config.cjs
+├── tsconfig.json
+└── vercel.json
 ```
 
 ##  How to run
