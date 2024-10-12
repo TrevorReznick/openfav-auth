@@ -9,14 +9,13 @@ Astro, Supabase, TailwindCss
 ## Configuration:
 Open an account (if you dont'have) on (Supabase)[https://supabase.com/] and start a new project;
 Set up authentication:
-Navigate to the "Authentication" tab in your project dashboard.
-Enable desired auth providers:
-Supabase supports various auth methods. Enable the ones you need (e.g., email/password, Google, GitHub).
-Configure auth settings:
-Adjust settings like password strength, email templates, etc.
+Navigate to the "Authentication" tab in your project dashboard. Enable desired auth providers: (e.g., email/password, Google, GitHub).
+We need stuff such as ClientID or OauthID that are provided from the social provider (ie. Google Developer console, Github settings etc)
+cp .env.example .env and insert the supabase url and supabase key
+Install dependecies and run it, that's all
 
 ## Live link
-[Openfav-auth](https://openfav-auth.vercel.app)
+(Openfav-auth)[https://openfav-auth.vercel.app]
 
 ##  Project Structure
 
