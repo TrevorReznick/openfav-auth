@@ -1,6 +1,6 @@
 # Openfav auth
 
-This template is a fork of [https://github.com/matt765/Tailcast](Tailcast)
+This template is a fork of (https://github.com/matt765/Tailcast)[Tailcast]
 
 ## Tech stack:
 
