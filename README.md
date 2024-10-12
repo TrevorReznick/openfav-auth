@@ -7,7 +7,7 @@ This template is a fork of [tailcast](https://github.com/matt765/Tailcast); the 
 Astro, Supabase, TailwindCss
 
 ## Configuration:
-Open an account (if you dont'have) on (Supabase)[https://supabase.com/] and start a new project;
+Open an account (if you dont'have) on [Supabase](https://supabase.com/) and start a new project;
 Set up authentication:
 Navigate to the "Authentication" tab in your project dashboard. Enable desired auth providers: (e.g., email/password, Google, GitHub).
 We need stuff such as ClientID or OauthID that are provided from the social provider (ie. Google Developer console, Github settings etc)
