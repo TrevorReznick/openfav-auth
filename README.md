@@ -15,7 +15,7 @@ cp .env.example .env and insert the supabase url and supabase key
 Install dependecies and run it, that's all
 
 ## Live link
-(Openfav-auth)[https://openfav-auth.vercel.app]
+[Openfav-auth](https://openfav-auth.vercel.app)
 
 ##  Project Structure
 
