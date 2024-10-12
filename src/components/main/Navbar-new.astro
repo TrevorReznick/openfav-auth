@@ -11,6 +11,7 @@ const navbarLinks = [
   { label: 'FAQ', href: '/#FAQ', ariaLabel: 'FAQ' },
 ]
 
+
 const _isAuthenticated = isAuthenticated.get()
 
 ---
@@ -48,9 +49,8 @@ const _isAuthenticated = isAuthenticated.get()
     <div>
       <div class="grow basis-0 justify-end hidden lg:flex">
         <a
-          id="signin"
           class="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-          href={_isAuthenticated ? "/api/v1/auth/signout" : "/login"}
+          href={_isAuthenticated ? "/api/v1/auth/signout" : "/api/v1/auth/signin"}
           aria-label="source code"
         >
           <GithubIcon />
@@ -81,23 +81,23 @@ const _isAuthenticated = isAuthenticated.get()
         {label}
       </a>
     ))}
-    <a
-      class="outlined-button pl-6 pr-8 pt-2 pb-2 flex"
-      href="https://github.com/matt765/Tidestream"
-      target="_blank"
+    <a 
+      class="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+      href={_isAuthenticated ? "/api/v1/auth/signout" : "/api/v1/auth/signin"}
+      aria-label="auth link"      
     >
       <GithubIcon />
-      Source code
+      <span class="pt-px">{_isAuthenticated/* ? "Sign out" : "Sign in"*/}</span>
     </a>
+
   </div>
 </nav>
 
 <script>
-const menuToggle = document.getElementById('menuToggle')
-const mobileMenu = document.getElementById('mobileMenu')
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden')
-})
-       
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
 </script>
