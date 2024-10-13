@@ -41,8 +41,8 @@ const blogData = [
         <div class="flex sm:hidden lg:flex w-11/12 mx-auto sm:ml-0 sm:mr-0 lg:w-1/2 xl:w-3/5 px-4 mb-8 lg:mb-0 h-full">
           <a href="/blog/article">
             <div class="p-6 sm:p-10 bg-bgDark3 rounded-3xl h-full hover:bg-bgDark3Hover transition cursor-pointer">
-              <Image
-                src={blogData[0].image}
+              <img
+                src={blogData[0].image.src}
                 alt={blogData[0].title}
                 class="rounded-3xl mb-6 w-full"
                 aria-label={blogData[0].title}
@@ -70,8 +70,8 @@ const blogData = [
                   {post.subtitle}
                 </p>
               </div>
-              <Image
-                src={post.image}
+              <img
+                src={post.image.src}
                 alt={post.title}
                 class="rounded-3xl mb-6 w-[9rem] h-[9rem] lg:w-auto lg:h-auto xl:w-full"
                 aria-label={post.title}
