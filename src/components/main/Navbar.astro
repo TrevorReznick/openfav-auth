@@ -30,7 +30,7 @@ const _isAuthenticated = isAuthenticated.get()
           </div>
           <div class="text-white ml-1 mb-7 text-6xl">
             <img
-                src={logo}
+                src={logo.src}
                 alt="logo"
                 width=30
                 height=30
@@ -60,7 +60,9 @@ const _isAuthenticated = isAuthenticated.get()
           href={_isAuthenticated ? "/api/v1/auth/signout" : "/login"}
           aria-label="source code"
         >
+          <!--
           <GithubIcon />
+           -->
           <span class="pt-px">{_isAuthenticated ? "Sign out" : "Sign in"}</span>
         </a>
       </div>
