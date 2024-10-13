@@ -1,13 +1,13 @@
 {
-  "name": "openfav",
+  "name": "openfav-auth",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "description": "Openfav develop project",
   "author": {
     "name": "Trevor Reznick",
     "email": "electrics.sheeps@gmail.com",
-    "url": "https://matt765-portfolio.vercel.app/"
+    "url": "https://opengav-auth.vercel.app"
   },
   "private": true,
   "scripts": {
