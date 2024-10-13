@@ -1,5 +1,4 @@
 ---
-import  TailcastLogo  from '../../assets/logos/TailcastLogo.astro'
 import { Image } from 'astro:assets'
 import logo from '../../assets/logos/openfav.png'
 import GithubIcon from '../../assets/icons/GithubIcon.astro'
@@ -22,7 +21,7 @@ const _isAuthenticated = isAuthenticated.get()
   aria-label="Main navigation"
 >
   <div class="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
-    <div>
+    <Fragment>
       <a href="/#home" aria-label="Home">
         <div class="flex justify-start items-center grow basis-0">
           <div class="text-white font-['Inter'] font-bold text-xl">
@@ -38,7 +37,7 @@ const _isAuthenticated = isAuthenticated.get()
           </div>
         </div>
       </a>
-    </div>
+    </Fragment>
     <div>
       <div class="hidden lg:flex h-full pl-12 pb-2">
         {navbarLinks.map(({ href, label, ariaLabel }) => (
