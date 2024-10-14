@@ -77,29 +77,27 @@ const _isAuthenticated = isAuthenticated.get()
   </div>
   <!-- Mobile navbar -->
   <div
-    id="mobileMenu"
-    class="hidden flex-col mt-16 lg:hidden absolute top-4 left-0 bg-bgDark1 z-50 w-full items-center gap-10 pb-10 border-y border-solid border-bgDark3 pt-10"
-  >
-    {navbarLinks.map(({ label, href, ariaLabel }) => (
-      <a
-        class="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
-        href={href}
-        aria-label={ariaLabel}
-      >
-        {label}
-      </a>
-    ))}
+  id="mobileMenu"
+  class="hidden flex-col mt-16 lg:hidden fixed top-0 left-0 bg-bgDark1 z-50 w-full h-full items-center justify-start gap-6 pb-10 border-y border-solid border-bgDark3 pt-20 overflow-y-auto"
+>
+  {navbarLinks.map(({ label, href, ariaLabel }) => (
     <a
-      class="outlined-button pl-6 pr-8 pt-2 pb-2 flex"
-      href="https://github.com/matt765/Tidestream"
-      target="_blank"
+      class="text-white text-2xl leading-6 cursor-pointer font-normal hover:scale-110 transition duration-300"
+      href={href}
+      aria-label={ariaLabel}
     >
-      <!--
-      <GithubIcon />
-       -->
-      Source code
+      {label}
     </a>
-  </div>
+  ))}
+  <a
+    class="outlined-button px-6 py-2 flex items-center mt-4"
+    href="https://github.com/matt765/Tidestream"
+    target="_blank"
+  >
+    <!-- <GithubIcon /> -->
+    <span class="ml-2">Source code</span>
+  </a>
+</div>
 </nav>
 
 <script>
