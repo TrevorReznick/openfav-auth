@@ -92,11 +92,11 @@ const _isAuthenticated = isAuthenticated.get()
   </div>
   <a
     class="outlined-button px-6 py-2 flex items-center mt-4"
-    href="https://github.com/matt765/Tidestream"
-    target="_blank"
+    id="signin"
+    href={_isAuthenticated ? "/api/v1/auth/signout" : "/login"}
   >
     <!-- <GithubIcon /> -->
-    <span class="ml-2">Source code</span>
+      <span class="ml-2">{_isAuthenticated ? "Sign out" : "Sign in"}</span>
   </a>
 </div>
 </nav>
